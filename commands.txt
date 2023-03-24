@@ -1,0 +1,28 @@
+1) py -m venv myenv
+2) on powershell: myenv\Scripts\activate
+    or
+   on git terminal: source myenv/Scripts/activate
+   Pour Lever la restriction des scripts sous win 10: Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+4) pip install django
+5) pip list
+6) pip install django-dotenv
+7) django-admin startproject blog
+8) pip install djangorestframework
+9) pip install django-dotenv
+10) pip install black
+config:
+    .vscode > settings.json: 
+                            {
+                                "editor.formatOnSave": true,
+                                "python.formatting.provider": "black",
+                                "python.formatting.blackArgs": [
+                                    "--line-length",
+                                    "88"
+                                ],
+                                "[python]": {
+                                    "editor.codeActionsOnSave": {
+                                        "source.organizeImports": true
+                                    }
+                                },
+                            }
+10) pip install psycopg2
